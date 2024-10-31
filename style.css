@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.main{
+    overflow: hidden;
+}
+body {
+  background-color: bisque;
+}
+.container {
+  display: flex;
+  height: 1.5cap;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(192, 117, 20);
+  font-family: "Red Rose", serif;
+  font-size: 3em;
+  font-style: italic;
+}
+.flower {
+  width: 100%;
+}
+.font {
+  position: relative;
+  bottom: 600px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  animation-name: bounce;
+  animation-duration: 2s;
+  text-shadow: 10px 10px 5px rgb(243, 192, 117);
+  transform-origin: bottom left;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+.gif {
+  display: flex;
+  position: relative;
+  top: -500px;
+  flex-direction: row;
+  justify-content: center;
+}
+.main_gif{
+    width : 400px;
+}
+.crackers {
+  position: relative;
+  width: 600px;
+  left: 31%;
+  top: -250px;
+  display: inline;
+  /* position: fixed; */
+}
+
+@media  screen and (width <= 950px){
+    .font{
+        bottom: 500px;
+        font-size: 2em;
+    }
+    .crackers{
+        width: 400px;
+        left: 30%;
+    }
+    .main_gif{
+        width : 250px;
+    }
+    .container{
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+}
+
+@media  screen and (width <= 660px){
+    .font{
+        bottom: 350px;
+        font-size: 1.5em;
+    }
+    .crackers{
+        width: 300px;
+        left: 28%;
+        top: -180px;
+    }
+    .gif{
+        top: -350px;
+    }
+    .main_gif{
+        width : 150px;
+    }
+    .container{
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .flower{
+        height: 250px;
+    }
+}
+
+@media screen and (width <=435px){
+    .font{
+        bottom: 230px;
+        font-size: 1em;
+    }
+    .crackers{
+        width: 200px;
+        left: 113px;
+        top: -120px;
+    }
+    .gif{
+        top: -220px;
+    }
+    .main_gif{
+        width : 100px;
+    }
+    .container{
+        font-size: 1.5em;
+        font-weight: 400;;
+    }
+    .flower{
+        height: 150px;
+    }
+}
